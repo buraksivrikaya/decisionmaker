@@ -1,0 +1,116 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<script src="lib/JQuery/jquery-3.2.1.min.js"></script>
+		<link rel="stylesheet" href="lib/Bootstrap/bootstrap.min.css">
+		<link rel="stylesheet" href="lib/FontAwesome/css/font-awesome.min.css">
+		<script src="lib/Bootstrap/popper.js"></script>
+		<script src="lib/Bootstrap/bootstrap.min.js"></script>
+	</head>
+	<body>
+	<div id="page">
+		<div class="row jumbotron">
+			<div class="col-12">
+				<h1>Decision Maker</h1>
+				<div id="accordion" role="tablist" aria-multiselectable="true">
+				  <div class="card">
+					<div class="card-header" role="tab" id="headingOne">
+					  <h5 class="mb-0">
+						<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+						  What?
+						</a>
+					  </h5>
+					</div>
+
+					<div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne">
+					  <div class="card-block">
+								<p class="textPar">
+									Decision Maker is a program that decides for you. It doesn't guarantee the decision is correct. it is just for fun.
+								</p>
+					  </div>
+					</div>
+				  </div>
+				  <div class="card">
+					<div class="card-header" role="tab" id="headingTwo">
+					  <h5 class="mb-0">
+						<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+						  How?
+						</a>
+					  </h5>
+					</div>
+					<div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
+					  <div class="card-block">
+								<p class="textPar">
+									It is easy to use program but there is something you should know. There are four levels for decision strength that you have to decide. These are...</p>
+									<ul>
+										<li>0: This decision is the weakest decision. Probably gonna harm you.</li>
+										<li>1: A bit stronger decision than 0, still weak. Not gonna harm you but you won't get anything if you do that.</li>
+										<li>2: Stong decision that you get profit if you do it.</li>
+										<li>3: The strongest decision.</li>
+									</ul>
+<p class="textPar">
+								You can add unlimited amount of options to the program.
+								</p>
+					  </div>
+					</div>
+				  </div>
+				  <div class="card">
+					<div class="card-header" role="tab" id="headingThree">
+					  <h5 class="mb-0">
+						<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+						  Any Rules?
+						</a>
+					  </h5>
+					</div>
+					<div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree">
+					  <div class="card-block">
+								<p class="textPar">
+									There is no rule, you have to obey strength level thing.
+									Almost forgot, you can't add multiple options those have same name.
+								</p>
+					  </div>
+					</div>
+				  </div>
+				</div>
+
+
+
+				
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-12">
+				<div class="input-group">
+					<span class="input-group-addon">Option</span>
+					<input id="msg" type="text" class="form-control" name="msg" placeholder="One of target decision">
+					<span id="effectValue" class="input-group-addon">0</span>
+						<a id="pEffectButton" class="btn btn-success input-group-addon" role="button" data-placement="top" data-toggle="popover" title="Popover Header" data-content="Some content inside the popover">+</a>
+					
+						<a id="nEffectButton" class="btn btn-danger input-group-addon" role="button">-</a>
+						<a id="decisionAddButton" class="btn btn-info input-group-addon" role="button">Add</a>
+				</div>
+			</div>
+		</div>
+		<br>
+		<div id="optionsList">
+			<div class="row">
+				<div class="col-1 text-right"><i class="fa fa-trash-o" aria-hidden="true"></i></div>
+				<div class="col-9">Options - Total:<span id="optionCount"></span></div>
+				<div class="col-2 text-right">+/-</div>
+			</div>
+			<hr style="margin-top:2px;">
+
+		</div>
+		<br>
+		<div class="row">
+			<div class="col-8"></div>
+			<div class="col-4 text-right">
+				<a id="decisionMakeButton" class="btn btn-info" role="button">Make Decision</a>
+			</div>
+		</div>
+	</div>
+
+		<link rel="stylesheet" href="fe.css">
+		<script src="fe.js"></script>
+	</body>
+</html>
